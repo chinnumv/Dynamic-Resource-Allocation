@@ -45,6 +45,4 @@ print("Allocated servers:", allocated_servers)
 - calculate_desired_servers(user_traffic, course_popularity, system_load): Method to calculate the desired number of servers based on the provided conditions.
 - adjust_servers(desired_servers): Method to adjust the number of servers based on the desired value.
 
-## Example
 
-An example usage of the resource allocator is provided in the code file. It demonstrates how to initialize the allocator, simulate changing conditions, and dynamically allocate resources based on those conditions.
