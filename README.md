@@ -8,22 +8,31 @@ This Python code implements a simple resource allocator that dynamically adjusts
 
 ## Usage
 1. Instantiate Resource Allocator:
-Initialize the ResourceAllocator class with the maximum number of servers that can be allocated.Example:
- 
+Initialize the ResourceAllocator class with the maximum number of servers that can be allocated.
+Example:
+
+```
 allocator = ResourceAllocator(max_servers=10)
+```
 
 2. Allocate Resources:
-Call the allocate_resources method of the ResourceAllocator instance with parameters representing the current system conditions: user traffic, course popularity, and system load. This method dynamically adjusts the number of servers and returns the allocated servers.Example:
+Call the allocate_resources method of the ResourceAllocator instance with parameters representing the current system conditions: user traffic, course popularity, and system load. This method dynamically adjusts the number of servers and returns the allocated servers.
+Example:
 
+```
 user_traffic = np.random.randint(1, 100)
 course_popularity = np.random.rand()
 system_load = np.random.rand()
 allocated_servers = allocator.allocate_resources(user_traffic, course_popularity, system_load)
+```
 
 3. Output:
-The method allocate_resources returns the number of servers allocated based on the provided conditions.Example:
- 
+The method allocate_resources returns the number of servers allocated based on the provided conditions.
+Example:
+
+```
 print("Allocated servers:", allocated_servers)
+```
 
 ## Classes and Methods
 
